@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PET SHOP</title>
+  <link rel="icon" href="img/logo.png" type="image/png">
+  <link rel="stylesheet" href="css/estilo.css" /> 
+  <script src="js/script.js" defer></script> 
+</head>
+
+<body>
+  <header>
+    <a href="index.html"><img src="img/logo.png" alt="Logo" class="logo"></a> 
+    <nav>
+      <ul class="menu">
+        <li><a href="#">Topo da página</a></li> 
+        <li><a href="#">Contato</a></li> 
+        <li><a href="login.html">Login</a></li> 
+      </ul>
+    </nav>
+    <div class="auth-status" id="authStatus">Usuário não autenticado</div>
+  </header>
+
+  <main>
+    <h2>Cadastro do Usuário</h2>
+    <form id="cadastroForm">
+      <div class="campo">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome">
+      </div>
+
+      <div class="campo">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+      </div>
+
+      <div class="campo">
+        <label for="telefone">Telefone para Contato:</label>
+        <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXX-XXXX">
+      </div>
+
+      <div class="campo">
+        <label for="tipoPet">Tipo de Pet:</label>
+        <select id="tipoPet" name="tipoPet">
+          <option value="cachorro">Cachorro</option>
+          <option value="gato">Gato</option>
+          <option value="passaros">Pássaros</option>
+          <option value="roedores">Roedores</option>
+          <option value="outros">Outros</option>
+        </select>
+      </div>
+
+      <div class="campo">
+        <label for="tamanhoPet">Tamanho do Pet:</label>
+        <div class="tamanho-options">
+          <label><input type="radio" name="tamanho" value="pequeno"> Pequeno</label>
+          <label><input type="radio" name="tamanho" value="medio"> Médio</label>
+          <label><input type="radio" name="tamanho" value="grande"> Grande</label>
+        </div>
+      </div>
+
+      <div class="campo">
+        <label for="tema">Estilo do Formulário:</label>
+        <select id="tema">
+          <option value="default">Default</option>
+          <option value="custom">Custom</option>
+        </select>
+      </div>
+
+      <button type="submit">Enviar Cadastro</button>
+      
+      <footer class="footer">
+        Desenvolvido por: Douglas, Guilherme & Gustavo
+  </footer>
+    </form>
+  </main>
+
+</body>
+
+</html>
